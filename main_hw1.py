@@ -30,5 +30,3 @@ print('Using "sorted": ', sorted(n_list)[2::3])
 
 
 print('Original list: ', n_list)
-gfhjfhgjkf
-
