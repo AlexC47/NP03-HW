@@ -19,14 +19,12 @@ def my_function(n):
 
     if n % 2 == 0:
         even_sum = n + even_temp
-        odd_sum = odd_temp
     else:
-        even_sum = even_temp
         odd_sum = n + odd_temp
 
     tot_sum = n + sum_temp
 
-    return (tot_sum, even_sum, odd_sum)
+    return tot_sum, even_sum, odd_sum
 
 
 print(my_function(7))
