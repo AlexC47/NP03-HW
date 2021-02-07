@@ -1,4 +1,4 @@
-import csv
+import csv, uuid
 
 
 cars_from_file = []
@@ -14,8 +14,6 @@ with open('homework_example.csv', 'r') as file:
         else:
             car_info.append(data)
 
-# cars_from_file = [{key: value for key, value in zip(header, element)} for element in car_info]
-
 
 def add_car_class(car):
     """
@@ -24,17 +22,14 @@ def add_car_class(car):
     :return:
     """
     car = car.copy()
-    if int(car[' hp']) < 120:
+    if int(car['hp']) < 120:
         car['class'] = 'slow'
-    elif 120 <= int(car[' hp']) < 180:
+    elif 120 <= int(car['hp']) < 180:
         car['class'] = 'fast'
     else:
         car['class'] = 'sport'
 
     return car
-
-
-cars_from_file = list(map(add_car_class, cars_from_file))
 
 
 def add_price_range(car):
@@ -44,11 +39,18 @@ def add_price_range(car):
     :return:
     """
     car = car.copy()
-    if int(car[' price']) < 1000:
+    if int(car['price']) < 1000:
         car['price_range'] = 'cheap'
-    elif 1000 <= int(car[' price']) < 5000:
+    elif 1000 <= int(car['price']) < 5000:
         car['price_range'] = 'medium'
     else:
         car['price_range'] = 'expensive'
+
+    return car
+
+
+def add_id(car):
+    car = car.copy()
+    car['id'] = uuid.uuid4()
 
     return car

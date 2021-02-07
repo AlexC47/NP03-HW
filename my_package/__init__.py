@@ -1,1 +1,1 @@
-from .appends import add_price_range, add_car_class
+from .appends import add_price_range, add_car_class, add_id
