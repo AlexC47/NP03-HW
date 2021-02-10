@@ -1,1 +1,26 @@
-[{"brand": "opel", "model": "corsa", "hp": "100", "price": "2500", "class": "slow", "price_range": "medium"}, {"brand": "bmw", "model": "m3", "hp": "280", "price": "4500", "class": "sport", "price_range": "medium"}, {"brand": "dacia", "model": "logan", "hp": "65", "price": "4500", "class": "slow", "price_range": "medium"}][][][][][]
+[
+    {
+        "brand": "opel",
+        "model": "corsa",
+        "hp": "100",
+        "price": "2500",
+        "class": "slow",
+        "price_range": "medium"
+    },
+    {
+        "brand": "bmw",
+        "model": "m3",
+        "hp": "280",
+        "price": "4500",
+        "class": "sport",
+        "price_range": "medium"
+    },
+    {
+        "brand": "dacia",
+        "model": "logan",
+        "hp": "65",
+        "price": "4500",
+        "class": "slow",
+        "price_range": "medium"
+    }
+][][][][][]

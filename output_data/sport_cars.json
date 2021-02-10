@@ -1,1 +1,10 @@
-[{"brand": "bmw", "model": "m3", "hp": "280", "price": "4500", "class": "sport", "price_range": "medium"}][][][][][]
+[
+    {
+        "brand": "bmw",
+        "model": "m3",
+        "hp": "280",
+        "price": "4500",
+        "class": "sport",
+        "price_range": "medium"
+    }
+][][][][][]

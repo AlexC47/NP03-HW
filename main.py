@@ -31,7 +31,7 @@ cars_from_file = list(map(add_price_range, cars_from_file))
 # cars_from_file = list(map(add_id, cars_from_file))
 
 
-print(cars_from_file)
+# print(cars_from_file)
 
 
 slow_cars = filter(lambda car: True if car['class'] == 'slow' else False, cars_from_file)
@@ -47,5 +47,5 @@ sorted_cars = [slow_cars, fast_cars, sport_cars, cheap_cars, medium_cars, expens
 
 for category in sorted_cars:
     with open('./output_data/%s.json' % ([k for k, v in locals().items() if v == category][0]), 'w') as file:
-        for cars in sorted_cars:
-            json.dump(list(category), file)
+        for car in sorted_cars:
+            json.dump(list(category), file, indent=4)
